@@ -1,0 +1,30 @@
+/* Top Section + copii */
+.top-section {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6rem 0;
+}
+
+.bg-contacte {
+    position: absolute;
+    top: -7.6rem;
+    z-index: -1;
+    bottom: 0;
+    width: 100vw;
+    background-image: url('https://www.itschool.ro/_next/static/media/background.d5722ffa.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Mid Section + copii */
+.mid-section {
+    border-radius: 1.6rem;
+    background-color: var(--text-color-light);
+    margin-top: -80px;
+    height: 20rem;
+}

@@ -1,0 +1,206 @@
+:root {
+    --bg-primary: rgb(0, 135, 104);
+    --bg-secondary: rgb(236, 177, 58);
+    --bg-tertiary: rgb(19, 123, 188);
+    --bg-dark: rgb(25, 30, 48);
+
+    --text-color-white: rgb(255, 255, 255);
+    --text-color-light: rgb(253, 253, 253);
+    --text-color-dark: rgb(25, 30, 48);
+    --text-color-muted: rgba(25, 30, 48, 0.4);
+
+    --spacing-xl: 6rem;
+    --spacing-l: 3rem;
+    --spacing-m: 1.25rem;
+    --spacing-normal: 1rem;
+    --spacing-sm: 0.5rem;
+
+    --font-size-default: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-ml: 1.25rem;
+    --font-size-l: 1.75rem;
+    --font-size-xl: 2.25rem;
+    --font-size-xxl: 3rem;
+}
+
+/* Reseteaza CSS din browser */
+body {
+    font-family: 'Asap', sans-serif;
+    font-size: var(--font-size-default);
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color-white);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--text-color-white);
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    margin: 0;
+    color: var(--text-color-dark);
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    color: var(--text-color-dark);
+    font-size: var(--font-size-l);
+}
+
+h4 {
+    color: var(--text-color-dark);
+    font-size: var(--font-size-ml);
+}
+
+h5 {
+    color: var(--text-color-dark);
+    font-size: var(--font-size-m);
+}
+
+p {
+    color: var(--text-color-dark);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Navigare */
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: var(--spacing-m);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+nav a {
+    padding: var(--spacing-normal);
+}
+
+nav ul li a:hover {
+    color: var(--bg-secondary);
+}
+
+.active {
+    font-weight: 500;
+    border-radius: 2rem;
+    background-color: rgba(252, 250, 247, 0.1);
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+nav .meniu-despre {
+    position: relative;
+}
+
+nav .meniu-despre:hover .sub-meniu {
+    display: flex;
+}
+
+.sub-meniu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: var(--bg-dark);
+    top: calc(100% - 10px);
+    z-index: 1;
+
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 76px 1fr auto;
+    grid-template-areas: "header""main""footer";
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+/* Layout Main Continut pagina */
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: min(1240px, 100vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
+    grid-area: main / main / main / main;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+
+/* Stilizare Buton Success */
+
+.button-success {
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 0.65rem 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+    border-radius: 2.5rem;
+    font-size: var(--font-size-m);
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.button-success:hover {
+    opacity: 0.8;
+}
+
+/* Stilizare Titlu Sectiuni */
+
+.title {
+    box-sizing: border-box;
+}
+
+.title :nth-child(1) {
+    color: var(--text-color-muted);
+}
+
+.title :nth-child(2) {
+    margin: 1rem 0;
+}
