@@ -1,4 +1,3 @@
-
 /* Stilizare Sectiuni */
 
 /* Sectiunea 1 */
@@ -348,6 +347,74 @@ main .third-section .poster img {
     width: 100%;
     max-width: 500px;
     margin-left: auto;
+}
+
+main .fourth-section {
+    display: block;
+    padding: 9.6rem 0px;
+    overflow: hidden;
+}
+
+main .fourth-section .eco-it-school {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .fourth-section .spacer1 {
+    width: 100%;
+    height: var(--spacing-normal)
+}
+
+main .fourth-section .text-eco-it {
+    display: flex;
+    gap: 2.4rem;
+}
+
+main .fourth-section .text-eco-it>h2 {
+    min-width: 36.25rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--bg-dark);
+}
+
+main .fourth-section .text-eco-it>p {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--bg-dark);
+}
+
+main .fourth-section .spacer2 {
+    width: 100%;
+    height: 3rem;
+}
+
+main .fourth-section .pagination {
+    display: flex;
+    gap: var(--spacing-m);
+    margin-top: 1.5rem;
+    user-select: none;
+}
+
+main .fourth-section .pagination>svg {
+    cursor: pointer;
+}
+
+main .fourth-section .pagination .pag-nr {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--bg-dark);
+}
+
+main .fourth-section .spacer3 {
+    width: 100%;
+    height: 1.5rem;
 }
 
 main .subscribe {
