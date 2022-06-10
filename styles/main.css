@@ -226,10 +226,12 @@ footer section .col .first-foot .footer-social {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
+    gap: 5px;
 }
 
 footer section .col .first-foot .footer-social a {
     color: rgb(25, 30, 48);
+    align-self: center;
 }
 
 footer section .col .first-foot .footer-social p {
