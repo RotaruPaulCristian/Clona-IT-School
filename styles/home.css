@@ -417,6 +417,142 @@ main .fourth-section .spacer3 {
     height: 1.5rem;
 }
 
+main .fifth-section {
+    position: relative;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+main .fifth-section::before {
+    top: 0px;
+    width: 100vw;
+    left: var(--spacing-m);
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    display: block;
+    background-color: rgba(202, 205, 193, 0.1);
+}
+
+main .fifth-section .wrapper {
+    width: 100%;
+    display: grid;
+    gap: var(--spacing-l);
+    grid-template-areas: "img subtitle""img title""img details""video video""itemstitle itemstitle""items items""partenerstitle partenerstitle""parteners parteners""button button";
+    grid-template-columns: auto 1fr;
+}
+
+main .fifth-section .wrapper .subtitle {
+    grid-area: subtitle;
+    max-width: 100%;
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .fifth-section .wrapper .title {
+    grid-area: title;
+    margin-top: -1.406rem;
+    max-width: 100%;
+    font-size: var(--font-size-xl);
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .fifth-section .wrapper .imagewrapper {
+    grid-area: img;
+    max-width: 36.25rem;
+    align-self: end;
+    margin-right: var(--spacing-l);
+}
+
+main .fifth-section .wrapper .imagewrapper img {
+    display: block;
+    max-width: 100%;
+}
+
+main .fifth-section .wrapper .details {
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+}
+
+main .fifth-section .wrapper .details h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--text-color-dark);
+}
+
+main .fifth-section .wrapper .details p {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .fifth-section .wrapper .details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main .fifth-section .wrapper .details a .button {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0px var(--spacing-l);
+    display: flex;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    min-width: 7.125rem;
+    transition: all 0.25s ease-in 0s;
+    border: 1px solid var(--bg-primary);
+    color: var(--bg-primary);
+    background-color: white;
+}
+
+main .fifth-section .wrapper .details a .button p {
+    display: block;
+    transition: all 0.25s ease-in 0s;
+    padding: 0.5rem 0px;
+    font-weight: normal;
+    font-size: var(--font-size-default);
+    color: var(--bg-primary);
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+main .fifth-section .wrapper .video-wrapper {
+    grid-area: video;
+    max-width: 100%;
+    aspect-ratio: 15 / 9;
+    padding: 2rem;
+    background-color: rgba(202, 205, 193, 0.1);
+}
+
+main .fifth-section .wrapper .video-wrapper>iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 26.25rem;
+}
+
+main .fifth-section .wrapper .itemstitle {
+    grid-area: itemstitle;
+    max-width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--text-color-dark);
+}
+
 main .subscribe {
     position: relative;
     margin: 0px;
