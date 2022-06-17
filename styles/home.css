@@ -751,6 +751,172 @@ main .sixth-section .testimonial .buttons .despreTestimoniale p {
     color: var(--bg-tertiary);
 }
 
+main .sixth-section .testimonial .buttons .infoFacebook {
+    cursor: pointer;
+    padding: var(--spacing-sm) 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    color: white;
+    border-radius: 1.5rem;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: opacity 0.25s ease-in 0s;
+}
+
+main .sixth-section .testimonial .buttons .infoFacebook:hover {
+    opacity: 0.8;
+}
+
+main .sixth-section .testimonial .buttons .infoFacebook p {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+main .sixth-section .testimonial .controls {
+    grid-area: controls;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+main .sixth-section .testimonial .controls svg {
+    margin-right: var(--spacing-sm);
+}
+
+main .sixth-section .testimonial .controls p {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+main .sixth-section .testimonial .controls .testimonial-pag {
+    grid-column: 1 / span 2;
+    display: flex;
+    gap: var(--spacing-m);
+    margin-top: 1.5rem;
+}
+
+main .sixth-section .testimonial .controls .testimonial-pag svg {
+    cursor: pointer;
+}
+
+main .sixth-section .testimonial .controls .testimonial-pag p {
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+main .containerFAQ {
+    margin: auto;
+    max-width: 48.75rem;
+    width: 100%;
+    padding: var(--spacing-l) 0px var(--spacing-xl);
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .containerFAQ h2 {
+    font-size: var(--font-size-xl);
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--bg-dark);
+}
+
+main .containerFAQ .spacerFAQ {
+    width: 100%;
+    height: var(--spacing-l);
+}
+
+main .containerFAQ .Q-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 1.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(25, 30, 48, 0.1) 0px 20px 40px 0px;
+    background-color: rgb(253, 253, 253);
+}
+
+main .containerFAQ .Q-container .question {
+    cursor: pointer;
+    padding: 1.5rem 0px;
+    display: flex;
+    gap: 0.625rem;
+}
+
+main .containerFAQ .Q-container .question h4 {
+    flex: 1 1 0%;
+    font-size: var(--font-size-ml);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-color-dark);
+}
+
+main .containerFAQ .Q-container .answer {
+    margin-left: 1.75rem;
+    transition: all 0.4s ease-out 0s;
+    opacity: 0;
+    max-height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    border-top: 1px solid rgba(25, 30, 48, 0.4);
+    font-size: var(--font-size-default);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+main .containerFAQ .linkFAQ {
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.1em;
+    transition: all 0.25s ease-in 0s;
+}
+
+main .containerFAQ .linkFAQ:hover {
+    opacity: 0.8;
+}
+
+main .containerFAQ .linkFAQ .FAQ-button {
+    width: fit-content;
+    padding: 0px var(--spacing-l);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    min-width: 7.125rem;
+    border: 1px solid rgb(0, 135, 104);
+    color: rgb(0, 135, 104);
+    background-color: white;
+}
+
+main .containerFAQ .linkFAQ .FAQ-button p {
+    display: block;
+    padding: var(--spacing-sm) 0px;
+    font-weight: normal;
+    font-size: var(--font-size-default);
+    color: rgb(0, 135, 104);
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
 main .subscribe {
     position: relative;
     margin: 0px;
