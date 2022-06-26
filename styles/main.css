@@ -262,7 +262,12 @@ footer section .col .foot-col a:hover {
     color: var(--bg-primary);
 }
 
-
+@media (max-width: 760px) {
+    footer {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
 
 /* Stilizare Buton Success */
 
