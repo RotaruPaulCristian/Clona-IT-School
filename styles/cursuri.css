@@ -356,3 +356,136 @@ main .second-section a .card-container .details-button .button-container svg {
     margin-left: 0.4rem;
     margin-right: -1.2rem;
 }
+
+main .third-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 2.4rem;
+}
+
+@media (max-width: 760px) {
+    .third-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+@media (max-width: 960px) {
+    flex-direction: column;
+}
+
+main .third-section .forWho-content {
+    flex: 1 1 0%;
+}
+
+main .third-section .forWho-content .subtitle {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .third-section .forWho-content .subtitle-spacer {
+    width: 100%;
+    height: 1.6rem;
+}
+
+main .third-section .forWho-content .title {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .third-section .forWho-content .spacer {
+    width: 100%;
+    height: 2.4rem;
+}
+
+main .third-section .forWho-content .body {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .third-section .forWho-image {
+    flex: 1 1 0%;
+    display: block;
+}
+
+main .third-section .forWho-image img {
+    display: block;
+    max-width: 100%;
+}
+
+main .fourth-section {
+    padding: 9.6rem 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+@media (max-width: 760px) {
+    .fourth-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+@media (max-width: 960px) {
+    .fourth-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    align-items: revert;
+}
+
+main .fourth-section .mustKnow {
+    width: 100%;
+}
+
+main .fourth-section .mustKnow p {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .fourth-section .mustKnow .mustKnow-spacer {
+    width: 50%;
+    height: 1.6rem;
+}
+
+main .fourth-section .mustKnow h2 {
+    width: 50%;
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .fourth-section .mustKnow .mustKnow-spacer2 {
+    width: 50%;
+    height: 2.4rem;
+}
+
+main .fourth-section .mustKnow-image {
+    flex: 1 1 0%;
+    display: block;
+    margin-right: 6rem;
+}
+
+main .fourth-section .mustKnow-image img {
+    display: block;
+    max-width: 100%;
+}
+
+main .fourth-section .mustKnow-content {
+    flex: 1 1 0%;
+}
