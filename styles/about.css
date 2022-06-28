@@ -1,0 +1,344 @@
+html {
+    font-size: 10px;
+}
+
+main .first-section {
+    position: relative;
+    width: 100%;
+    padding: 9.6rem 0px;
+}
+
+@media (max-width: 760px) {
+    .first-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+main .first-section .background {
+    position: absolute;
+    height: 360px;
+    z-index: -1;
+    top: -3rem;
+    left: -7.6rem;
+    width: 100vw;
+    background-image: url(https://www.itschool.ro/_next/static/media/background.175e0d96.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .first-section .wrapper {
+    margin: auto;
+    max-width: 80rem;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .first-section .wrapper h1 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.21;
+    text-align: center;
+    color: white;
+}
+
+main .second-section {
+    position: relative;
+    width: 100%;
+    padding: 9.6rem 0px;
+}
+
+@media (max-width: 760px) {
+    .second-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+main .second-section .spacer {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .second-section .contentWrapper {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-areas: "about-text . about-image""results-image . about-image""results-image . results-text";
+}
+
+main .second-section .contentWrapper .about-text {
+    grid-area: about-text;
+    max-width: 58rem;
+    margin-right: auto;
+}
+
+main .second-section .contentWrapper .about-text .subtitle {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .second-section .contentWrapper .about-text .about-spacer {
+    width: 100%;
+    height: 1.6rem;
+}
+
+main .second-section .contentWrapper .about-text h2 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .second-section .contentWrapper .about-text .about-spacer2 {
+    width: 100%;
+    height: 2.4rem;
+}
+
+main .second-section .contentWrapper .about-text p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .second-section .contentWrapper .about-text .about-spacer3 {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .second-section .contentWrapper .about-image {
+    grid-area: about-image;
+    align-self: end;
+    max-width: 48rem;
+    margin-left: auto;
+}
+
+main .second-section .contentWrapper .about-image img {
+    display: block;
+    max-width: 100%;
+}
+
+main .second-section .contentWrapper .results-image {
+    grid-area: results-image;
+    max-width: 58rem;
+    margin-right: auto;
+}
+
+main .second-section .contentWrapper .results-image img {
+    display: block;
+    max-width: 100%;
+}
+
+main .second-section .contentWrapper .results-text {
+    grid-area: results-text;
+    max-width: 48rem;
+    margin-left: auto;
+}
+
+main .second-section .contentWrapper .results-text .results-spacer {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .second-section .contentWrapper .results-text .results-subtitle {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .second-section .contentWrapper .results-text .results-spacer2 {
+    width: 100%;
+    height: 1.6rem;
+}
+
+main .second-section .contentWrapper .results-text h2 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .second-section .contentWrapper .results-text .results-spacer3 {
+    width: 100%;
+    height: 2.4rem;
+}
+
+main .second-section .contentWrapper .results-text p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .third-section {
+    position: relative;
+    width: 100%;
+    padding: 9.6rem 0px;
+}
+
+@media (max-width: 760px) {
+    .third-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+main .third-section .aboutTrainers-titles {
+    display: flex;
+    gap: 4.8rem;
+    justify-content: space-between;
+}
+
+main .third-section .aboutTrainers-titles .titlesWrapper {
+    min-width: 50%;
+}
+
+main .third-section .aboutTrainers-titles .titlesWrapper p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .third-section .aboutTrainers-titles .titlesWrapper .titles-spacer {
+    width: 100%;
+    height: 1.6rem;
+}
+
+main .third-section .aboutTrainers-titles .titlesWrapper h2 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .third-section .aboutTrainers-titles .titlesWrapper .titles-spacer2 {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .third-section .aboutTrainers-titles .body-spacer {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .third-section .aboutTrainers-titles .aboutTrainers-body {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .third-section .aboutTrainers-photos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 9.6rem 0px 4.8rem;
+}
+
+main .third-section .aboutTrainers-photos img {
+    display: block;
+    max-width: 100%;
+}
+
+main .third-section .aboutTrainers-photos .photos-spacer {
+    width: 100%;
+    height: 4.8rem;
+}
+
+main .third-section .aboutTrainers-photos a .button {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0px 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.4rem;
+    min-width: 11.4rem;
+    transition: all 0.25s ease-in 0s;
+    border: 1px solid rgb(0, 135, 104);
+    color: rgb(0, 135, 104);
+    background-color: white;
+}
+
+main .third-section .aboutTrainers-photos a .button:hover {
+    opacity: 0.8;
+}
+
+main .third-section .aboutTrainers-photos a .button p {
+    display: block;
+    padding: 0.8rem 0px;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: rgb(0, 135, 104);
+}
+
+main .third-section .aboutTrainers-enroll {
+    padding-top: 4.8rem;
+    border-top: 1px solid rgba(25, 30, 48, 0.1);
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper {
+    margin: auto;
+    max-width: 58rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper h2 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: center;
+    color: var(--text-color-dark);
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper .enroll-spacer {
+    width: 100%;
+    height: 2.4rem;
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: var(--text-color-dark);
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper a .join-button {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0px 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.4rem;
+    min-width: 11.4rem;
+    color: white;
+    background-color: rgb(0, 135, 104);
+    transition: all 0.25s ease-in 0s;
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper a .join-button:hover {
+    opacity: 0.8;
+}
+
+main .third-section .aboutTrainers-enroll .enroll-wrapper a .join-button p {
+    display: block;
+    color: white;
+    padding: 0.8rem 0px;
+    font-weight: normal;
+    font-size: 1.6rem;
+}
