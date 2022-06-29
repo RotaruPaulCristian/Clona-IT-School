@@ -206,8 +206,9 @@ footer section .col {
 
 footer section .col .first-foot {
     width: 380px;
+    display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.5rem;
 }
 
 footer section .col .first-foot .foot-header {
@@ -239,6 +240,7 @@ footer section .col .first-foot .footer-social a {
 footer section .col .first-foot .footer-social p {
     margin-top: 12px;
     margin-bottom: 10px;
+    font-size: 0.75rem;
     color: var(--text-color-muted);
 }
 
@@ -251,6 +253,7 @@ footer section .col .foot-col {
 
 footer section .col .foot-col p {
     margin: 12px 0;
+    font-size: 0.75rem;
     color: var(--text-color-muted);
 }
 
@@ -260,6 +263,47 @@ footer section .col .foot-col a {
 
 footer section .col .foot-col a:hover {
     color: var(--bg-primary);
+}
+
+footer .footer-spacer {
+    width: 100%;
+    height: 3rem;
+}
+
+footer .copyright {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+footer .copyright .copyright-text {
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer .copyright .copyright-text p {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--text-color-muted);
+}
+
+footer .copyright .terms {
+    font-size: 0.75rem;
+    font-weight: normal;
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer .copyright .terms a {
+    color: var(--text-color-muted);
+}
+
+footer .copyright .terms a:hover {
+    color: rgb(0, 135, 104);
 }
 
 @media (max-width: 760px) {

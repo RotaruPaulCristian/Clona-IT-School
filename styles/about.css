@@ -342,3 +342,255 @@ main .third-section .aboutTrainers-enroll .enroll-wrapper a .join-button p {
     font-weight: normal;
     font-size: 1.6rem;
 }
+
+main .third-section .aboutTrainers-background {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: -7.6rem;
+    bottom: 0px;
+    width: 100vw;
+    background-image: url(https://www.itschool.ro/_next/static/media/background.f010c851.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+main .fourth-section {
+    position: relative;
+    width: 100%;
+    padding: 9.6rem 0px;
+}
+
+@media (max-width: 760px) {
+    .fourth-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+main .fourth-section .location-photos {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "locations locations locations map map map""one one two two three three""four four four four three three";
+}
+
+main .fourth-section .location-photos .location-titles {
+    grid-area: locations;
+    max-width: 58rem;
+}
+
+main .fourth-section .location-photos .location-titles .location-subtitle {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-muted);
+}
+
+main .fourth-section .location-photos .location-titles .location-spacer {
+    width: 100%;
+    height: 1.6rem;
+}
+
+main .fourth-section .location-photos .location-titles h2 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: var(--text-color-dark);
+}
+
+main .fourth-section .location-photos .location-titles .location-spacer2 {
+    width: 100%;
+    height: 2.4rem;
+}
+
+main .fourth-section .location-photos .location-titles p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+}
+
+main .fourth-section .location-photos .location-map {
+    grid-area: map;
+    display: flex;
+    margin-bottom: 4.8rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .fourth-section .location-photos .location-map img {
+    display: block;
+    max-width: 100%;
+}
+
+main .fourth-section .location-photos .photo {
+    display: block;
+    max-width: 100%;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+
+main .fourth-section .location-photos .photo1 {
+    grid-area: one;
+}
+
+main .fourth-section .location-photos .photo2 {
+    grid-area: two;
+}
+
+main .fourth-section .location-photos .photo3 {
+    grid-area: three;
+}
+
+main .fourth-section .location-photos .photo4 {
+    grid-area: four;
+}
+
+main .fourth-section .section-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 12rem;
+    background-color: rgba(25, 30, 48, 0.1);
+}
+
+.footer-about {
+    grid-area: footer / footer / footer / footer;
+    height: fit-content;
+    padding: 4.8rem 20px 2.4rem;
+    background-color: white;
+    width: 100%;
+    max-width: min(1240px, 100vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-about section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-about section .col {
+    flex: 1 1 0%;
+}
+
+.footer-about section .col .first-foot {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-about section .col .first-foot .foot-header {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 4.8rem;
+}
+
+.footer-about section .col .first-foot .foot-header img {
+    width: 100px;
+    margin-bottom: 24px;
+}
+
+.footer-about section .col .first-foot .foot-header p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+    margin-bottom: 2rem;
+}
+
+.footer-about section .col .first-foot .footer-social {
+    flex: 1 1 0%;
+    color: rgb(25, 30, 48);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 5px;
+}
+
+.footer-about section .col .first-foot .footer-social a {
+    color: rgb(25, 30, 48);
+    align-self: center;
+}
+
+.footer-about section .col .first-foot .footer-social p {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--text-color-muted);
+}
+
+.footer-about section .col .foot-col {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    line-height: 1.5;
+}
+
+.footer-about section .col .foot-col p {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    color: var(--text-color-muted);
+}
+
+.footer-about section .col .foot-col a {
+    color: var(--text-color-dark);
+}
+
+.footer-about section .col .foot-col a:hover {
+    color: var(--bg-primary);
+}
+
+.footer-about .footer-spacer {
+    width: 100%;
+    height: 4.8rem;
+}
+
+.footer-about .copyright {
+    width: 100%;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: space-between;
+}
+
+.footer-about .copyright .copyright-text {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-about .copyright .copyright-text p {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--text-color-muted);
+}
+
+.footer-about .copyright .terms {
+    font-size: 1.2rem;
+    font-weight: normal;
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-about .copyright .terms a {
+    color: var(--text-color-muted);
+}
+
+.footer-about .copyright .terms a:hover {
+    color: rgb(0, 135, 104);
+}
+
+@media (max-width: 760px) {
+    .footer-about {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
